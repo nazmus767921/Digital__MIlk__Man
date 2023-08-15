@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply m-0 font-sans flex place-content-center bg-[#0f172a];
+	}
+
+	img {
+		@apply w-full h-full max-w-[9999px] object-cover;
+	}
+	/* disable number input type spinner arrow buttons */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+@layer components {
+	.balance {
+		text-wrap: balance;
+	}
+}
